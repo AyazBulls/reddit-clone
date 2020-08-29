@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   resources :comments, only: [:create]
 
   get "u/:username" => "public#profile", as: :profile
+
+  post "post/vote" => "votes#create"
 end
