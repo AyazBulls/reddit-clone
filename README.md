@@ -1,24 +1,39 @@
-# README
+# Reddit Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a clone of the famous website [Reddit](https://www.reddit.com/) and the result of this [Tutorial](https://www.youtube.com/playlist?list=PLtZ8UuFjvnDe2CHXYawMVLpFsH4G8urfM).
 
-Things you may want to cover:
+## Install
 
-* Ruby version
+### Clone the repository
 
-* System dependencies
+```shell
+git clone git@github.com:AyazBulls/reddit-clone.gitt
+```
 
-* Configuration
+### Check your Ruby version
 
-* Database creation
+```shell
+ruby -v
+```
 
-* Database initialization
+The ouput should start with something like `ruby 2.5.5`
 
-* How to run the test suite
+### Install dependencies
 
-* Services (job queues, cache servers, search engines, etc.)
+Using [Bundler](https://github.com/bundler/bundler) and [Yarn](https://github.com/yarnpkg/yarn):
 
-* Deployment instructions
+```shell
+bundle && yarn
+```
 
-* ...
+### Initialize the database
+
+```shell
+rails db:setup
+```
+
+## Serve
+
+```shell
+rails s
+```
